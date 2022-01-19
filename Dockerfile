@@ -9,3 +9,5 @@ RUN set -ex \
     	&& docker-php-ext-install pdo pdo_pgsql
 
 WORKDIR /var/www/html
+
+RUN chown -R www-data:www-data /var/www/html
